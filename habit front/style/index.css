@@ -16,6 +16,9 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 3vw 5vw;
+    position: fixed;
+    background-color: #09090a;
+    width: 100vw;
 }
 
 button{
@@ -37,9 +40,10 @@ button:hover{
     cursor: pointer;
 }
 
-form{
+#form-habits{
     display: flex;
-    padding: 0vw 5vw;
+    padding: 210px 5vw 48px;
+    width: fit-content;
 }
 
 .habits{
@@ -70,7 +74,7 @@ form{
     flex-direction: column;
 }
 
-.day span{
+.day div{
     font-family: 'Roboto Mono';
     margin-bottom: 8px;
     font-size: 20px;
@@ -78,6 +82,8 @@ form{
     color: #a1a1aa;
     text-align: center;
 }
+
+
 
 input{
     appearance: none;
@@ -94,3 +100,8 @@ input:checked{
     border: 2px solid #a78bfa;
 }
 
+@media (max-width: 570px){
+    button div{
+        display: none;
+    }
+}

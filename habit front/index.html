@@ -17,33 +17,29 @@
         <img src="assets/logo.svg" alt="Logo habit tracker">
         <button>
             <img src="./assets/plus.svg" alt="ícone sinal adição roxo">
-            Registrar novo dia
+            <div>
+                Registrar novo dia
+            </div>
         </button>
     </header>
 
-    <form>
+    <form id="form-habits">
         <div class="habits">
-            <div class="habit"><img src="./assets/run.svg" alt="ícone correr"></div>
-            <div class="habit"><img src="./assets/water.svg" alt="ícone gota de água"></div>
-            <div class="habit"><img src="./assets/food.svg" alt="ícone comida"></div>
-        </div>
-        <div class="days">
-            <div class="day">
-                <span>04/01</span>
-                <input type="checkbox" name="run">
-                <input type="checkbox" name="water">
-                <input type="checkbox" name="food">
+            <div class="habit" data-name="run">
+                <img src="./assets/run.svg" alt="ícone correr">
             </div>
-            <div class="day">
-                <span>03/01</span>
-                <input type="checkbox" name="run">
-                <input type="checkbox" name="water">
-                <input type="checkbox" name="food">
+            <div class="habit" data-name="water">
+                <img src="./assets/water.svg" alt="ícone gota de água">
+            </div>
+            <div class="habit" data-name="food">
+                <img src="./assets/food.svg" alt="ícone comida">
             </div>
         </div>
+        <div class="days"></div>
     </form>
 
-    
 
+    <script src="https://cdn.jsdelivr.net/gh/maykbrito/libs/NLWSetup/source/NLWSetup.js"></script>
+    <script src="./scripts/index.js"></script>
 </body>
 </html>
